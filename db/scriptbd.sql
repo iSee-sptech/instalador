@@ -4,7 +4,7 @@ create table Maquinas (
 sistemaOperacionalMaquina varchar(25),
 fabricanteMaquina varchar(25),
 arquiteturaMaquina varchar(25),
-tempoDeAtividade long,
+tempoDeAtividade varchar(20),
 discoMaquina varchar(10),
 ramMaquina varchar(10),
 processadorMaquina varchar(10),
