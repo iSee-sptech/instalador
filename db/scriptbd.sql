@@ -1,18 +1,27 @@
 USE isee;
 
 create table Maquinas (
-serialMaquina varchar(25),
 sistemaOperacionalMaquina varchar(25),
 fabricanteMaquina varchar(25),
 arquiteturaMaquina varchar(25),
 tempoDeAtividade long,
-nomeMaquina varchar (100),
 discoMaquina varchar(10),
 ramMaquina varchar(10),
 processadorMaquina varchar(10),
-cepMaquina char (9),
-numeroMaquina varchar (6),
-pontoDeReferencia varchar (25), 
-imgMaquina varchar (255),
-complementoMaquina varchar (50)
+);
+
+create table Historico (
+idHistorico int primary key auto_increment,
+usoRamHistorico varchar(10),
+usoProcessadorHistorico varchar(10),
+usoDiscoHistorico varchar(10),
+dataHoraHistorico datetime default current_timestamp,
+);
+
+create table Alerta (
+idAlerta int primary key auto_increment,
+componente varchar(10),
+nivelAlerta varchar(10),
+dado varchar(10),
+datahoraAlerta datetime,
 );
