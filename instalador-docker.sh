@@ -19,6 +19,7 @@
             
             sudo systemctl start docker
             sudo systemctl enable docker
+            sudo service docker start
 
             sudo docker pull mysql:8
             sleep 4
