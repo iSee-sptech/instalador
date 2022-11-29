@@ -24,7 +24,7 @@
             sudo docker pull mysql:8
             sleep 4
             
-            docker build -t dockerfile .
-            docker run -d -p 3306:3306 --name ContainerBD -e MYSQL_ROOT_PASSWORD='urubu100' -e MYSQL_DATABASE='isee' dockerfile
+            sudo docker build -t dockerfile .
+            sudo docker run -d -p 3306:3306 --name ContainerBD -e MYSQL_ROOT_PASSWORD='urubu100' -e MYSQL_DATABASE='isee' dockerfile
     fi
 
