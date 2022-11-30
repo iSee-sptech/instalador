@@ -79,3 +79,4 @@ sleep 1
         cd java/isee/target
         clear
         java -jar isee-1.0-SNAPSHOT-jar-with-dependencies.jar 
+	fi
