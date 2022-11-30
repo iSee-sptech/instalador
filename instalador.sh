@@ -64,3 +64,17 @@ fi
 #ABRIR APLICACAO
 
  git clone https://github.com/iSee-sptech/java.git
+ cd java
+ 
+  echo \"[Qual java deseja iniciar? Aperte]\"
+  echo \"[1 - CLI | 2 - Interface Gráfica]\"
+  read inst
+	if [ \"$inst\" == \"1\" ]
+        then
+        cd java/CLI-ISEE/target
+        clear
+        java -jar isee-1.0-SNAPSHOT-jar-with-dependencies.jar 
+        else
+        cd java/isee/target
+        clear
+        java -jar isee-1.0-SNAPSHOT-jar-with-dependencies.jar 
