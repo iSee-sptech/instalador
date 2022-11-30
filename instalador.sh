@@ -59,14 +59,15 @@ fi
             sudo docker build -t dockerfile .
             sudo docker run -d -p 3306:3306 --name ContainerBD -e MYSQL_ROOT_PASSWORD='urubu100' -e MYSQL_DATABASE='isee' dockerfile
     fi
-
+sleep 1
 
 #ABRIR APLICACAO
 
  git clone https://github.com/iSee-sptech/java.git
  cd java
  
-  echo \"[Qual java deseja iniciar? Aperte]\"
+  echo \"[Qual java deseja iniciar? Digite]\"
+  sleep 1
   echo \"[1 - CLI | 2 - Interface Gráfica]\"
   read inst
 	if [ \"$inst\" == \"1\" ]
